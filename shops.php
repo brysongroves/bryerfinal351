@@ -150,7 +150,7 @@ $rows = $stmt->fetchAll();
     </div>
     <!-- back to it i suppose -->
     <!-- Table section with container -->
-    <div class="table-container">
+    <div class="shoplist">
         <h2>All Coffee Shops</h2>
         <table class="half-width-left-align">
             <thead>
