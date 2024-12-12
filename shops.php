@@ -216,10 +216,7 @@ $rows = $stmt->fetchAll();
             <input type="text" id="ContactInfo" name="ContactInfo" required>
             <br><br>
             <label for="WebsiteURL">Website URL:</label>
-            <input type="url" id="WebsiteURL" name="WebsiteURL" required>
-            <br><br>
-            <label for="RoasteryID">Roastery ID:</label>
-            <input type="number" id="RoasteryID" name="RoasteryID" required>
+            <input type="text" id="WebsiteURL" name="WebsiteURL" required>
             <br><br>
             <input type="submit" value="Add Coffee Shop">
         </form>
