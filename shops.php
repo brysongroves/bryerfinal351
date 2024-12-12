@@ -70,9 +70,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 
-// Get all books for main table
 $sql = 'SELECT * FROM coffeeshops';
 $stmt = $pdo->query($sql);
+$rows = $stmt->fetchAll();
 ?>
 
 <!DOCTYPE html>
