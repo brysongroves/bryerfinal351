@@ -106,7 +106,7 @@ $rows = $stmt->fetchAll();
                                 <tr>
                                     <th>ShopID</th>
                                     <th>ShopName</th>
-                                    <th>Address></th>
+                                    <th>Address</th>
                                     <th>City</th>
                                     <th>State</th>
                                     <th>ZipCode</th>
