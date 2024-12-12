@@ -106,7 +106,7 @@ $rows = $stmt->fetchAll();
                                 <tr>
                                     <th>ShopID</th>
                                     <th>ShopName</th>
-                                    <th>Address</Address></th>
+                                    <th>Address></th>
                                     <th>City</th>
                                     <th>State</th>
                                     <th>ZipCode</th>
@@ -168,7 +168,8 @@ $rows = $stmt->fetchAll();
                 </tr>
             </thead>
             <tbody>
-                <?php while ($row = $stmt->fetch()): ?>
+            <?php foreach ($rows as $row): ?>
+
                 <tr>
                 <td><?php echo htmlspecialchars($row['ShopID']); ?></td>
                         <td><?php echo htmlspecialchars($row['ShopName']); ?></td>
@@ -187,7 +188,7 @@ $rows = $stmt->fetchAll();
                         </form>
                     </td>
                 </tr>
-                <?php endwhile; ?>
+                <?php endforeach; ?>
             </tbody>
         </table>
     </div>
