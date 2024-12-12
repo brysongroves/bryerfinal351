@@ -80,7 +80,7 @@ $rows = $stmt->fetchAll();
 <head>
     <meta charset="UTF-8">
     <title>Coffee shops</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
     <!-- Hero Section -->
