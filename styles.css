@@ -1,0 +1,193 @@
+head{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding: 20px;
+color: #ffffff;
+
+}
+
+header{
+    background: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 20px;
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid #ff7b54;
+    
+}
+header.logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 10px 0;
+
+}
+header .logo img{
+    font-size: 1.8rem;
+    max-height: 40px;
+    max-width: 150px;
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    display: block;
+    align-items: center;
+    gap: 10px;
+}
+
+body{
+    background-color: #ffffff;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding:  20px;
+color: #ffffff;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+nav ul li{
+    display: inline;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    padding: 0;
+    margin: 0;
+    gap: 20px; 
+    color: #ffffff;
+}
+nav ul li a{
+color: #ff7b54;
+font-weight: bold;
+padding: 10 px 15px;
+border-radius: 5;
+transition: backround-color 0.3s ease, transform 0.2s ease;
+
+}
+nav ul li a:hover{
+    background-color: #ffffff;
+    color: #043927;
+}
+nav ul li a:active{
+    transform: scale(0.98);
+}
+.hero{
+    background-color: #043927;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+
+
+}
+.hero_content{
+flex: 1;
+padding-right: 20px;
+color: #ffffff;
+
+}
+.hero_content h2{
+font-size: 2.5rem;
+margin-bottom: 1rem;
+color: #ffffff;
+}
+.hero_content p{
+font-size: 1.2rem;
+margin-bottom: 1.5rem;
+color: rgb(255, 255, 255);
+
+}
+.hero_button{
+display: inline-block;
+padding: 0.8rem 1.5rem;
+background-color: #ff7b54;
+color: #ffffff;
+border-radius: 5px;
+
+
+}
+.hero_button:hover{
+    background-color: #ffb400;
+    color: #043927
+}
+.hero_image{
+max-width: 45%;
+
+}
+.hero_image img{
+    width: 100%;
+    border-radius: 8px;
+}
+/* copied from project 2 */
+.links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line if not enough space */
+    justify-content: space-around; /* Adjusts spacing to maintain layout even at different screen sizes */
+    align-items: center;
+    padding: 20px; /* Allows more space for the cards */
+    margin: 20px;
+    background-color: #043927;
+}
+
+.link_card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    align-items: center;
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: 300px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); /* Adjusts width to fit 3 cards in one row, accounting for margin */
+    margin: 10px; /* Consistent spacing around cards */
+    padding: 10px;
+    text-align: center;
+}
+
+.link_card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    height: auto;
+}
+
+.link_card h3 {
+    margin-bottom: 10px 0;
+    font-size: 1.5rem;
+    color: #043927;
+}
+
+.link_card p {
+    font-size: 1rem;
+    color: #555555;
+}
+.link_button{
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #ff7b54;
+    color: #ffffff;
+    border-radius: 5px;
+
+}
+.link_button:hover{
+    background-color: #ffb400;
+    color: #043927;
+}
+
+footer{
+    background-color: #043927;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding: 20px;
+color: #ffffff;
+
+}
