@@ -91,7 +91,7 @@ $rows = $stmt->fetchAll();
         <!-- Search moved to hero section -->
         <div class="hero-search">
             <h2>Search for a shop</h2>
-            <form action="" method="GET" class="search-form">
+            <form action="shops.php" method="GET" style="display:inline;">
                 <label for="search">Search by Title:</label>
                 <input type="text" id="search" name="search" required>
                 <input type="submit" value="Search">
@@ -131,7 +131,8 @@ $rows = $stmt->fetchAll();
                                     <td><?php echo htmlspecialchars($row['AverageRating']); ?></td>
                                     <td><?php echo htmlspecialchars($row['RoasteryID']); ?></td>
                
-                                        <form action="index4.php" method="post" style="display:inline;">
+                                        <form action="shops.php" method="post" style="display:inline;">
+
                                             <input type="hidden" name="delete_id" value="<?php echo $row['ShopID']; ?>">
                                             <input type="submit" value="Delete">
                                         </form>
@@ -182,7 +183,7 @@ $rows = $stmt->fetchAll();
                         <td><?php echo htmlspecialchars($row['AverageRating']); ?></td>
                         <td><?php echo htmlspecialchars($row['RoasteryID']); ?></td>
                     <td>
-                        <form action="index4.php" method="post" style="display:inline;">
+                        <form action="shops.php" method="post" style="display:inline;">
                             <input type="hidden" name="delete_id" value="<?php echo $row['ShopID']; ?>">
                             <input type="submit" value="Delete">
                         </form>
