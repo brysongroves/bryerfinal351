@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $host = 'localhost'; 
 $dbname = 'final'; 
 $user = 'root'; 
@@ -28,8 +30,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     $stmnt->execute(['username' => $username]);
     $user = $stmnt->fetch();
 
-    if($user && pasword_verify($password, $user['PasswordHash'])) {
-        $_SESSION['user_id'];
+    if($user && password_verify($password, $user['PasswordHash'])) {
+        $_SESSION['user_id'] = $user['UserID'];
         $_SESSION['username'] = $user['Username'];
         $_SESSION['email'] = $user['Email'];
         header("Location: shops.php");
@@ -53,15 +55,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     <link rel="stylesheet" href = "styles2.css">
 </head>
 <body>
+
+<?php if (isset($_SESSION['username'], $_SESSION['email'])): ?>
     <div class='nav-bar'>
-    <p>Welcome, <?php echo htmlspecialchars($_SESSION['Username']); ?>!</p>
-    <p>Email <?php echo htmlspecialchars($_SESSION['Email']); ?>!</p>
+    <p>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>!</p>
+    <p>Email <?php echo htmlspecialchars($_SESSION['email']); ?>!</p>
     <a href ="logout.php">Logout</a>
     <!--comment test-->
     <!--comment test2-->
 </div>
-<body>
-</head>
+<?php endif; ?>
+</body>
 
 
 
