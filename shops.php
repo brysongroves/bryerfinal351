@@ -147,7 +147,7 @@ $stmt = $pdo->query($sql);
             <?php endif; ?>
         </div>
     </div>
-
+    <!-- back to it i suppose -->
     <!-- Table section with container -->
     <div class="table-container">
         <h2>All Coffee Shops</h2>
