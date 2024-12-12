@@ -5,6 +5,8 @@ $user = 'root';
 $pass = 'mysql';
 $charset = 'utf8mb4';
 
+// comment for new repository commit
+
 $dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
 $options = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
