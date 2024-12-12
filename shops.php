@@ -23,7 +23,7 @@ try {
 $search_results = null;
 if (isset($_GET['search']) && !empty($_GET['search'])) {
     $search_term = '%' . $_GET['search'] . '%';
-    $search_sql = 'SELECT * FROM coffeeshops WHERE ShopName LIKE :search';
+    $search_sql = 'SELECT * FROM coffeeshops WHERE ShopName, City, State, ZipCode, AverageRating, RoasteryID LIKE :search';
     $search_stmt = $pdo->prepare($search_sql);
     $search_stmt->execute(['search' => $search_term]);
     $search_results = $search_stmt->fetchAll();
@@ -171,7 +171,7 @@ $rows = $stmt->fetchAll();
             <?php foreach ($rows as $row): ?>
 
                 <tr>
-                <td><?php echo htmlspecialchars($row['ShopID']); ?></td>
+                
                         <td><?php echo htmlspecialchars($row['ShopName']); ?></td>
                         <td><?php echo htmlspecialchars($row['Address']); ?></td>
                         <td><?php echo htmlspecialchars($row['City']); ?></td>
