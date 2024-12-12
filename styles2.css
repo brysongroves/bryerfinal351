@@ -38,4 +38,12 @@ line-height: 1.6;
     max-width: 400px;
     
 }
-nav
+nav.nav-bar p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.nav-bar a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}

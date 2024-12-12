@@ -57,13 +57,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 <body>
 
 <?php if (isset($_SESSION['username'], $_SESSION['email'])): ?>
-    <div class='nav-bar'>
+
     <p>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>!</p>
     <p>Email <?php echo htmlspecialchars($_SESSION['email']); ?>!</p>
     <a href ="logout.php">Logout</a>
     <!--comment test-->
     <!--comment test2-->
-</div>
 <?php endif; ?>
 </body>
 
