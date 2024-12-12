@@ -104,7 +104,7 @@ $rows = $stmt->fetchAll();
                         <table>
                             <thead>
                                 <tr>
-                                    <th>ShopID</th>
+                                    
                                     <th>ShopName</th>
                                     <th>Address</th>
                                     <th>City</th>
@@ -120,7 +120,7 @@ $rows = $stmt->fetchAll();
                             <tbody>
                                 <?php foreach ($search_results as $row): ?>
                                 <tr>
-                                    <td><?php echo htmlspecialchars($row['ShopID']); ?></td>
+                                    
                                     <td><?php echo htmlspecialchars($row['ShopName']); ?></td>
                                     <td><?php echo htmlspecialchars($row['Address']); ?></td>
                                     <td><?php echo htmlspecialchars($row['City']); ?></td>
@@ -155,7 +155,6 @@ $rows = $stmt->fetchAll();
         <table class="half-width-left-align">
             <thead>
                 <tr>
-                    <th>ShopID</th>
                     <th>ShopName</th>
                     <th>Address</th>
                     <th>City</th>
@@ -218,9 +217,6 @@ $rows = $stmt->fetchAll();
             <br><br>
             <label for="WebsiteURL">Website URL:</label>
             <input type="url" id="WebsiteURL" name="WebsiteURL" required>
-            <br><br>
-            <label for="AverageRating">Average Rating:</label>
-            <input type="number" id="AverageRating" name="AverageRating" step="0.1" required>
             <br><br>
             <label for="RoasteryID">Roastery ID:</label>
             <input type="number" id="RoasteryID" name="RoasteryID" required>
