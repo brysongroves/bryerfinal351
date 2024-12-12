@@ -87,13 +87,13 @@ $rows = $stmt->fetchAll();
     <div class="hero-section">
         <h1 class="hero-title">Find Coffee Shops in Your Area</h1>
         <p class="hero-subtitle">One may become your new favorite spot!</p>
-        <div class="hero_button">
-        <a href="index1.html" class="hero_button">Go Back</a>
-</div>
         
         <!-- Search moved to hero section -->
         <div class="hero-search">
             <h2>Search for a shop</h2>
+            <div class="hero_button">
+        <a href="index1.html" class="hero_button">Go Back</a>
+</div>
             <form action="shops.php" method="GET" style="display:inline;">
                 <label for="search">Search by Title:</label>
                 <input type="text" id="search" name="search" required>
